@@ -1,0 +1,66 @@
+.notify-alert {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    margin-right: -100%;
+    z-index: 8888;
+    padding: 5px;
+    background: #fafafa;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.notify-alert.notify-success {
+    background: #1cd409;
+    color: #fff;
+}
+
+.notify-alert.notify-info {
+    background: #00b8ce;
+    color: #fff;
+}
+
+.notify-alert.notify-error {
+    background: #e01c1c;
+    color: #fff;
+}
+
+.notify-alert .notify-title {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    padding: 0px 25px 0px 0px;
+    display: block;
+}
+
+.notify-alert .notify-content {
+    font-size: 12px;
+    margin: 0px;
+    max-width: 400px;
+    line-height: 16px;
+}
+
+.notify-alert .notify-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #000 !important;
+    background: #fff !important;
+    text-align: center;
+    line-height:20px;
+    height: 20px;
+    width: 20px;
+}
+
+.notify-alert .notify-btn:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .notify-alert {
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+    }
+}
